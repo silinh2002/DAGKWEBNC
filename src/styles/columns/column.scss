@@ -1,0 +1,84 @@
+//============COLUMN================
+
+.list-wrapper {
+  width: 272px;
+  margin: 0 4px;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+
+  .list {
+    background-color: #ebecf0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+
+    //----------HEADER-------------
+    .list-header {
+      flex: 0 0 auto;
+      padding: 10px 8px;
+      position: relative;
+      min-height: 20px;
+
+      .is-menu-shown,
+      .is-subscribe-shown {
+        padding-right: 36px;
+      }
+    }
+
+    .u-clearfix:after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    //----------CARD COMPOSER-------------
+    .card-composer-container {
+      min-height: 38px;
+      max-height: 38px;
+      display: flex;
+      justify-content: space-between;
+
+      .open-card-composer {
+        border-radius: 3px;
+        color: #5e6c84;
+        display: block;
+        flex: 1 0 auto;
+        margin: 2px 0 8px 8px;
+        padding: 4px 8px;
+        position: relative;
+        text-decoration: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+
+        .icon-sm {
+          height: 20px;
+          font-size: 16px;
+          line-height: 20px;
+          width: 20px;
+        }
+
+        .icon-add {
+          color: primary;
+          margin-right: 10px;
+          content: "\E901";
+        }
+
+        .icon-add:before {
+          content: "\E901";
+        }
+
+        .hide {
+          display: none;
+        }
+      }
+    }
+  }
+}

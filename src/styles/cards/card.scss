@@ -1,0 +1,47 @@
+//----------CARD-------------
+.list-cards {
+  flex: 1 1 auto;
+  margin-bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 4px;
+  padding: 0 4px;
+  z-index: 1;
+  min-height: 0;
+
+  .card {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
+    cursor: pointer;
+    display: block;
+    margin-bottom: 8px;
+    max-width: 300px;
+    min-height: 20px;
+    text-decoration: none;
+    z-index: 0;
+
+    //-----------CardContent
+    .card-content {
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .content {
+        font-size: 12x;
+      }
+      .username {
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+
+    //-----------GRID
+    .grid {
+      width: 100%;
+      display: inline-flex;
+      justify-content: flex-end;
+    }
+  }
+}

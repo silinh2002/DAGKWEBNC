@@ -1,0 +1,40 @@
+$avatar-width: 200px;
+
+.profile__avatar {
+  position: relative;
+  max-width: $avatar-width;
+  margin: 20px auto;
+}
+
+.profile__avatar__image img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  width: $avatar-width;
+  height: $avatar-width;
+}
+
+.user-profile {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #5e6267;
+}
+.user-profile__field__name,
+.user-profile__field__value {
+  float: left;
+  width: 44%;
+  padding: 0 3%;
+}
+.user-profile__field {
+  margin-bottom: 1.6em;
+  line-height: 1.6;
+}
+.user-profile__field:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.user-profile__field__name {
+  font-weight: 800;
+  text-align: right;
+}
